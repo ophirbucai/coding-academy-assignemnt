@@ -9,6 +9,7 @@ import { apps } from "./constants/apps.js";
 import { animalService } from "./services/animal.service.js";
 import { getSearchParam, setUrlSearchParam } from "./utils/url.util.js";
 import { MouseMonitor } from "./components/MouseMonitor/MouseMonitor.jsx";
+import { LucideGithub } from "lucide-react";
 
 function App() {
     const [status, setStatus] = useState("loading"); // "loading" | "error" | "success"
@@ -52,7 +53,10 @@ function App() {
     return (
         <>
             <header className={styles.header}>
-                <h1>React Basics</h1>
+                <div className={styles.header_logo}>
+                    <a href="https://github.com/ophirbucai" className={styles.github}><LucideGithub fill="black" strokeWidth={0} /><span className={styles.moon_sun}></span></a>
+                    <h1>React Basics</h1>
+                </div>
                 <SelectApp selectApp={selectApp} selectedAppIndex={selectedAppIndex} />
             </header>
             <main className={styles.container}>
