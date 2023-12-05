@@ -1,0 +1,31 @@
+.special_table {
+    margin-inline: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 800px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid currentColor;
+}
+
+.special_table thead {
+    background: green;
+    color: white;
+}
+
+.special_table thead th {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.special_table thead th,
+.special_table tbody td {
+    padding: 0.5rem 0.75rem;
+}
+
+.special_table tbody {
+    font-size: 1rem;
+}
+
+.special_table tbody tr:nth-child(even) {
+    background-color: #f6f6f6;
+}

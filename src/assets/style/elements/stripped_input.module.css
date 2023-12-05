@@ -1,0 +1,14 @@
+.stripped_input {
+    border: none;
+    border-bottom: 1px solid currentColor;
+    background: transparent;
+    padding: 0;
+    margin: 3px 0 2px;
+    font-size: inherit;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease-in-out;
+    font-weight: inherit;
+    color: inherit;
+    outline: none;
+}

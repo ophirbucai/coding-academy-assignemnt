@@ -1,0 +1,22 @@
+.contained_button {
+    display: block;
+    padding: 0.5em 1em;
+    border-style: solid;
+    font-size: 0.75em;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+    outline-color: transparent;
+    transition: background-color 0.15s ease-in-out, outline-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.contained_button:hover,
+.contained_button:focus {
+    background-color: #f6f6f6;
+    border-color: #f6f6f6;
+}
+
+.contained_button:focus {
+    outline: none;
+}

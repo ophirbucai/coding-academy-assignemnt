@@ -1,0 +1,30 @@
+@import '../../assets/style/elements/contained_button.module.css';
+
+.watchers {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.watchers_empty_state {
+    text-align: center;
+    color: #ccc;
+}
+
+.watchers_empty_state h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.watchers_empty_state_button {
+    composes: contained_button;
+    background-color: #ccc3;
+    margin: 1rem auto 0;
+    display: flex;
+    font-size: 0.9rem;
+    place-items: start;
+    gap: 5px;
+}

@@ -1,0 +1,20 @@
+.select {
+    font-size: 1rem;
+    padding: 0.33em 0.5em 0.33em 0.33em;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: transparent;
+    outline-color: transparent;
+    transition: background-color 0.15s ease-in-out, outline-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.select:hover,
+.select:focus {
+    background-color: #f6f6f6;
+    border-color: #f6f6f6;
+}

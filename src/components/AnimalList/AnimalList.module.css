@@ -1,0 +1,38 @@
+@import '../../assets/style/animations/spin.module.css';
+@import '../../assets/style/ui/placeholder.module.css';
+@import '../../assets/style/elements/text_link.module.css';
+@import '../../assets/style/elements/special_table.module.css';
+@import '../../assets/style/elements/contained_button.module.css';
+
+.animal_list {
+    composes: special_table;
+    margin-top: 2rem;
+}
+
+.error_message {
+    color: indianred;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.retry_button {
+    composes: contained_button;
+    margin-top: 1rem;
+}
+
+.retry_button svg {
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+}
+
+.search_link {
+    composes: text_link;
+}
+
+.search_link svg {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+

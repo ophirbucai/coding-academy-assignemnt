@@ -1,0 +1,54 @@
+@import '@/style/elements/contained_button.module.css';
+
+.watcher_card {
+    padding: 1rem;
+    width: 160px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+    background: #fff;
+    min-height: 250px;
+    transition: scale 0.25s ease-in-out, box-shadow 0.15s ease-in-out 0.1s, translate 0.25s ease-in-out;
+}
+.watcher_card:hover {
+    scale: 1.05;
+    z-index: 101;
+    translate: 0 3px;
+    box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.05);
+}
+
+.watcher_card_avatar {
+    width: 100%;
+    background-color: #ccc3;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+}
+
+.watcher_card h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+.watcher_card_avatar svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.watcher_card_actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.watcher_card_add_new {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 700;
+}

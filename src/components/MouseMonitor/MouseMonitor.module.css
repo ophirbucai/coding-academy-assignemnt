@@ -1,0 +1,31 @@
+@import "@/style/elements/contained_button.module.css";
+
+.mouse_monitor {
+    color: #2c2c2c;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.mouse_monitor_toggle {
+    composes: contained_button;
+    background: #f6f6f630;
+    border: 1px solid #2c2c2c25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    min-width: 110px;
+    margin: 1rem auto 0;
+}
+
+.mouse_monitor_toggle:hover,
+.mouse_monitor_toggle:focus {
+    border: 1px solid #2c2c2c35;
+    background: #f6f6f650;
+}
+
+.mouse_monitor_toggle svg {
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+}

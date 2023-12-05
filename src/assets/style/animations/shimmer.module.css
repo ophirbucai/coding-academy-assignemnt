@@ -1,0 +1,16 @@
+@keyframes shimmer {
+    0% {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 0.6;
+    }
+}
+
+.shimmer {
+    animation-name: shimmer;
+    animation-duration: 750ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}

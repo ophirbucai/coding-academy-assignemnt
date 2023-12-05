@@ -1,0 +1,89 @@
+@import '../../../assets/style/elements/contained_button.module.css';
+@import '../../../assets/style/elements/stripped_input.module.css';
+@import '../../../assets/style/elements/stripped_button.module.css';
+
+.watcher_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.watcher_modal_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+
+.watcher_modal_content {
+    z-index: 101;
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    border: 1px solid currentColor;
+}
+
+.watcher_modal_content_header {
+    background: var(--background);
+    color: white;
+}
+
+.watcher_modal_content_header h2 {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.watcher_modal_content_header h2, .watcher_modal_content_body {
+    padding: 0.5rem 0.75rem;
+}
+
+.watcher_modal_content_body {
+    font-size: 1rem;
+}
+
+.watcher_modal_content_footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem 0.75rem;
+}
+
+.watcher_modal_name_input {
+    display: flex;
+    gap: 5px;
+}
+
+.watcher_modal_name_input_save {
+    composese: stripped_button;
+    padding: 3px;
+    display: grid;
+    place-items: center;
+}
+
+.watched_modal_name_editable {
+    composes: stripped_button;
+    padding-inline-end: 0.5rem;
+}
+
+.watched_modal_name_editable svg {
+    transition: opacity 0.15s ease-in-out;
+    opacity: 0;
+}
+
+.watched_modal_name_editable:hover svg {
+    opacity: 1;
+}

@@ -1,0 +1,25 @@
+@import '../../assets/style/elements/contained_button.module.css';
+@import '../../assets/style/elements/select.module.css';
+
+.select_app {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.select_app_select {
+    composes: select;
+    width: 100%;
+    padding-inline: 15px;
+}
+
+.select_app_button {
+    composes: contained_button;
+    display: grid;
+    place-items: center;
+}
+
+.select_app_button svg {
+    width: 13px;
+    height: 13px;
+}

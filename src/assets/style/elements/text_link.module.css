@@ -1,0 +1,18 @@
+.text_link {
+    color: #2c2c2c;
+    text-decoration: none;
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.15s ease-in-out;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 2px;
+}
+
+.text_link:hover,
+.text_link:focus {
+    text-decoration-line: underline;
+    text-decoration-color: #2c2c2c50;
+}
+
+.text_link:focus {
+    outline: none;
+}
