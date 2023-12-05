@@ -2,7 +2,6 @@ import styles from './CountDown.module.css';
 import React, { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import { LucideRotateCw, LucideVolume2, LucideVolumeX } from "lucide-react";
-import { getAssetUrl } from "../../utils/url.util.js";
 import clsx from "clsx";
 
 
@@ -31,7 +30,7 @@ export function CountDown({ startFrom, onDone, toTime = 0 }) {
             clearInterval(intervalId.current);
             onDone("Count down is done!");
             if (soundEnabled) {
-                new Audio(getAssetUrl("sound/mixkit-cartoon-positive-sound-2255.wav"))?.play()
+                new Audio("sound/mixkit-cartoon-positive-sound-2255.wav")?.play()
             }
         }
     }

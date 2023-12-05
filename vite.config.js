@@ -9,7 +9,14 @@ export default defineConfig({
         alias: {
             '@/style/': "/src/assets/style/",
             '@/hooks/': "/src/hooks/",
+            '@/img/': "/src/assets/img/",
+            '@/utils/': "/src/utils/",
         },
     },
     base: "/react-basics/",
+    build: {
+        outDir: "build",
+        emptyOutDir: true,
+        sourcemap: true,
+    }
 })
