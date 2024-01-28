@@ -1,8 +1,8 @@
-# React + Vite
+# React Basics Assignemnt for Coding Academy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- AnimalList (display some dummay data by following convention in React)
+- CountDown (add a timeout which updates a clock lol)
+- MouseMonitor (display mousep position based on viewport on x/y axis)
+- SeasonClock (show the season and a custom photo from a 'seasons service')
+- SelectApp (app switcher - for navigation using 'react router dom')
+- WatcherApp (showcase crud operations with dummy data using local storage)
